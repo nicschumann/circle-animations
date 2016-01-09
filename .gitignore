@@ -1,0 +1,4 @@
+# experimental .gitignore for elm
+
+elm-stuff
+elm.js
