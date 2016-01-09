@@ -1,4 +1,4 @@
-COMPILE-SUFFIX = -elm-compiled
+COMPILE-SUFFIX = -compiled
 
 MAIN = Main.elm
 JS-TARGET = Main$(COMPILE-SUFFIX).js
