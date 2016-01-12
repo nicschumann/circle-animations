@@ -6,10 +6,6 @@ type alias Point = (Float,Float)
 type alias Radius = Float
 type alias Center = Point
 
-type alias IntermediatePath = 
-    { pathState : String
-    , previousPoints : List Point 
-    }
 
 cartesian : Disk -> (Int,Int) -> Point
 cartesian disk (radial, concentric) =
