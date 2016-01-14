@@ -13,7 +13,7 @@ build: build-js
 
 serve: build serve-start
 
-clean: serve-stop clean-files
+stop: serve-stop clean
 
 
 build-js:
@@ -32,7 +32,7 @@ serve-stop:
 	kill -9 $$(ps aux | grep -v grep | grep "http-server" | awk '{print $$2}') 
 
 # Clean up after yourself
-clean-files:
+clean:
 	rm -f $(OUTPUT-DIR)/*$(COMPILE-SUFFIX).js
 	rm -f $(OUTPUT-DIR)/*$(COMPILE-SUFFIX).html
 	rm -f $(OUTPUT-DIR)/style/*$(COMPILE-SUFFIX).css
