@@ -2,4 +2,5 @@
 
 elm-stuff
 output/**/*-compiled*
+.sass-cache
 
